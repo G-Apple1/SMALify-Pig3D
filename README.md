@@ -25,8 +25,9 @@ Install dependencies, particularly [PyTorch (cuda support recommended)](https://
    git clone https://github.com/G-Apple1/SMALify-Pig3D.git
    cd SMALify-Pig3D
    ```
+2. Extract the SMALST.zip into the "/data" directory
 
-2. QuickStart: Run on images in the dataset.
+3. QuickStart: Run on images in the dataset.
    - 5 images: ['000994', '000906', '000635', '000352', '000372']
       ```
       python smal_fitter/optimize_to_joints.py
