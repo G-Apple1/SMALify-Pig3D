@@ -230,7 +230,7 @@ class SMALFitter(nn.Module):
 
             with torch.no_grad():
                 verts, joints, Rs, v_shaped = self.smal_model(
-                    batch_params['betas'] * batch_params['betas'],
+                    batch_params['betas'],
                     torch.cat([
                         batch_params['global_rotation'].unsqueeze(1),
                         batch_params['joint_rotations']], dim = 1),
